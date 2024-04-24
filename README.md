@@ -53,7 +53,7 @@ Click on 'Add Network' to add a custom network.
         Chain ID: 80002
         Currency Symbol: MATIC
         Block Explorer URL: https://amoy.polygonscan.com/
-.
+        
 **Get Test MATIC Tokens:**
 To perform transactions on the Amoy Testnet, you need some test MATIC tokens.
 You can get them from the Amoy Testnet faucet: Amoy Testnet Faucet.
