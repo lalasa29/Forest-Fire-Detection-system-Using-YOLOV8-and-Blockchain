@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Processing</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 20px;
+        }
+        h1 {
+            color: #ff5733;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        #video {
+            width: 100%;
+            max-width: 640px;
+            height: auto;
+            border: 2px solid #ff5733;
+            border-radius: 20px;
+            margin: 20px auto;
+        }
+        .message {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Live Processing</h1>
+        <img id="video" src="{{ url_for('video_feed') }}">
+        <div class="message">
+            {% if fire_detected is not none %}
+                {% if fire_detected %}
+                    Fire detected!
+                {% else %}
+                    No fire detected.
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
