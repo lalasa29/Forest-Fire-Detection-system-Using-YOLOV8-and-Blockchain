@@ -10,8 +10,8 @@ Install the required Python packages by running the following command in your te
 Execute the Flask application by running the following command in your terminal or command prompt:
 
           python app.py
-**
-Access the Application:**
+
+**Access the Application:**
 Open your web browser and go to http://localhost:5000/ to access the fire detection application.
 
 
